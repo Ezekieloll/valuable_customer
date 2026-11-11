@@ -1,0 +1,9 @@
+issue,column,n_rows,evidence,proposed_treatment
+Missing values,email_engagement,6,6/250 (2.4%); 3 of 6 are subscribers vs 36% overall,Impute median within subscription group + missing flag
+Missing values (not at random),satisfaction_rating,8,"8/250 (3.2%); 6 of 8 are subscribers, skewed to higher value",Impute median within subscription group + missing flag; do not drop rows
+Suspicious value,average_order_value,2,Exactly £5.00 for 2 customers - looks like a floor/default,"Keep, flag; check sensitivity"
+Outlier,distinct_product_types,1,One customer = 12 types; all others ≤ 9,Cap at 9 (winsorise) + flag
+High-value outliers,customer_value_12m,19,Right-skewed spend; IQR outliers are the customers we care about,"Keep - genuine, they ARE the target group"
+Definition / leakage,"total_orders, average_order_value",250,value ≈ orders × AOV (r=0.97); ratio 0.75-1.74,Exclude from driver model (circular); use only to describe segments
+Partial observation window,tenure_months,51,"Tenure < 12m, so 12-month value is not a full year",Flag new customers; sensitivity check excluding them
+Logical inconsistency,tenure_months vs total_orders,16,Tenure < 12m but > 2 orders per month of tenure,Flag; keep (cannot verify which field is wrong); sensitivity check
