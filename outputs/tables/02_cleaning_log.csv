@@ -1,0 +1,8 @@
+column,issue,rows_affected,treatment,flag_column
+email_engagement,Missing values,6,"Filled with subscription-group median (yes=75.4, no=38.35)",email_was_missing
+satisfaction_rating,Missing values (not at random - mostly subscribers),8,"Filled with subscription-group median (yes=4.5, no=4.2)",satisfaction_was_missing
+distinct_product_types,Outlier (12 vs max 9 for others),1,Capped at 9,products_capped
+average_order_value,Suspicious value (exactly £5.00),2,"Kept, flagged",aov_suspicious
+tenure_months,Part-year value (tenure < 12 months),51,"Kept, flagged for sensitivity check",new_customer
+tenure_months / total_orders,Logical inconsistency (> 2 orders per month of tenure),16,"Kept, flagged for sensitivity check",inconsistent_record
+customer_value_12m,Target variable created,50,high_value = 1 if value >= £600.35 (top 20%),high_value
