@@ -1,0 +1,8 @@
+,odds_ratio,ci_lower,ci_upper,p_value,significant
+is_subscriber,5.264,1.566,17.689,0.007,True
+email_per_10pts,1.472,1.066,2.033,0.019,True
+tenure_years,1.773,1.137,2.765,0.012,True
+distinct_product_types,1.115,0.91,1.367,0.295,False
+discount_per_10pct,1.03,0.602,1.762,0.914,False
+satisfaction_rating,0.988,0.361,2.706,0.981,False
+age,0.994,0.961,1.027,0.706,False

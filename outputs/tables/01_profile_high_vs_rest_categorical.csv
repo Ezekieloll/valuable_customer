@@ -1,12 +1,12 @@
-variable,role,high_value_share,rest_share,ratio
-subscription_status = no,driver,0.1,0.77,0.13
-subscription_status = yes,driver,0.9,0.23,3.91
-acquisition_channel = Google,driver,0.5,0.255,1.96
-acquisition_channel = Instagram,driver,0.36,0.305,1.18
-acquisition_channel = Marketplace,driver,0.0,0.295,0.0
-acquisition_channel = Referral,driver,0.14,0.145,0.97
-region = Midlands,driver,0.1,0.16,0.62
-region = North,driver,0.24,0.225,1.07
-region = Scotland & Wales,driver,0.16,0.295,0.54
-region = South East,driver,0.18,0.17,1.06
-region = South West,driver,0.32,0.15,2.13
+variable,group,pct_high_value
+subscription_status,no,3.1
+subscription_status,yes,49.5
+acquisition_channel,Marketplace,0.0
+acquisition_channel,Referral,19.4
+acquisition_channel,Instagram,22.8
+acquisition_channel,Google,32.9
+region,Scotland & Wales,11.9
+region,Midlands,13.5
+region,South East,20.9
+region,North,21.1
+region,South West,34.8

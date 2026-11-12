@@ -1,0 +1,7 @@
+check,customers,is_subscriber,email_per_10pts,tenure_years,distinct_product_types,discount_per_10pct,satisfaction_rating,age
+"Main model (all 250, top 20%)",250,5.26,1.47,1.77,1.12,1.03,0.99,0.99
+Without filled-in values,236,4.84,1.53,1.72,1.08,1.0,0.92,1.0
+Without inconsistent records,234,6.87,1.4,1.94,1.08,1.03,0.92,0.99
+Without new customers (<12m),199,7.05,1.41,1.79,1.07,1.07,0.96,0.99
+High-value = top 25%,250,3.4,1.49,1.65,1.14,0.99,1.86,1.01
+High-value = top 10%,250,4.63,1.93,1.53,1.04,1.67,1.1,1.0
